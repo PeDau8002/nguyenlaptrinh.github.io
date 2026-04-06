@@ -1,0 +1,73 @@
+p {
+    color: darkred;
+    font-family: Arial, sans-serif;
+}
+
+.doan-van {
+    background-color: #f2f2f2;
+    border: 1px solid gray;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+#tieude {
+    color: darkred;
+    background-color: lightyellow;
+    border: 2px solid orange;
+    text-align: center;
+}
+
+.noi-bat {
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
+body {
+    background: linear-gradient(#00111f, #003366);
+    min-height: 100vh;
+}
+
+/* Ông già Noel */
+.santa {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 100px;
+    animation: fly 5s linear infinite;
+}
+
+@keyframes fly {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-200px); }
+    100% { transform: translateX(0); }
+}
+
+/* Tuyết */
+.snow {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 18px;
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+    from { top: -10px; }
+    to { top: 100vh; }
+}
+/* CÂY THÔNG NOEL */
+.tree {
+    position: fixed;
+    bottom: 0;
+    left: 30px;
+    font-size: 300px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 5px #00ff00); }
+    to   { filter: drop-shadow(0 0 15px #00ff00); }
+}
+
